@@ -213,11 +213,13 @@ body{
 }
 
 .card{
-    background:#ffffff; /* putih */
+    background:#ffffff;
     border-radius:15px;
     overflow:hidden;
     position:relative;
     transition:.3s;
+    box-shadow: 0 15px 40px rgba(111, 78, 55, 0.35);
+    
 }
 
 .card:hover{
@@ -274,6 +276,7 @@ body{
     padding:25px;
     border:1px solid #6f4e37;
     transition:.3s;
+    box-shadow: 0 15px 40px rgba(111, 78, 55, 0.35);
 }
 
 .menu-box:hover{
@@ -441,6 +444,10 @@ footer{
 
      .about{
         grid-template-columns: 1fr;
+    }
+
+    .title-about{
+        justify-content: center;
     }
 
      .menu-section{
