@@ -11,7 +11,7 @@ body{
 }
 
 /* NAVBAR */
-nav{
+.navbar{
     position:fixed;
     top:0;
     width:100%;
@@ -44,20 +44,36 @@ nav{
     font-size:22px;
 }
 
-nav ul{
+.nav-list{
     list-style:none;
     display:flex;
     gap:25px;
 }
 
-nav ul li a{
+.nav-item a{
     text-decoration:none;
     color:#f5efe6;
 }
 
-.nav-btn{
-    border:1px solid #6f4e37;
+.item:hover{
+    color: #aaa;
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+.nav-order-btn{
+    background-color: #6f4e37;
     padding:6px 14px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(178, 176, 176);
+}
+
+.nav-order-btn:hover{
+    background-color: #2e2e2e;
+    cursor: pointer;
+    color: white;
+    transition-duration: 500ms;
+    box-shadow: 1px 1px 3px white;
 }
 
 /* HERO */
@@ -101,30 +117,36 @@ nav ul li a{
     padding:14px 35px;
     text-decoration:none;
     margin:0 10px;
-}
-
-.btn:hover{
-    background-color: rgb(201, 200, 200);
-    transition-duration: 500ms;
-    color: black;
-}
-
-.btn-outline:hover{
-    background-color: black;
-    transition-duration: 500ms;
-    color: white;
+    border-radius: 10px;
 }
 
 .btn{
     background:#000000;
     color:#ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .btn-outline{
     border:1px solid #6f4e37;
     /* color:#ffffff; */
     color: black;
+    box-shadow: 0 8px 20px rgba(111, 78, 55, 0.4);
 }
+
+.btn:hover{
+    background-color: rgb(201, 200, 200);
+    transition-duration: 500ms;
+    color: black;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.btn-outline:hover{
+    background-color: black;
+    transition-duration: 500ms;
+    box-shadow: 0 0 20px rgba(111, 78, 55, 0.8);
+    color: white;
+}
+
 
 /* ABOUT */
 .about{
@@ -272,11 +294,14 @@ nav ul li a{
     padding:15px 50px;
     text-decoration:none;
     border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(111,78,55,0.5);
+
 }
 
 .btn-order:hover{
     background-color: #5a4632;
     transition-duration: 500ms;
+    box-shadow: 0 0 25px rgba(111,78,55,0.9);
 }
 
 /* FOOTER */
