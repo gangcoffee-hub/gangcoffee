@@ -39,9 +39,10 @@ body{
     box-shadow:0 0 15px rgba(111,78,55,0.6);
 }
 
-.logo span{
+.lable-g{
     font-family:'Playfair Display',serif;
     font-size:22px;
+    color: white;
 }
 
 .nav-list{
@@ -61,6 +62,11 @@ body{
     cursor: pointer;
 }
 
+.nav-item-order a{
+    text-decoration:none;
+    color:#f5efe6;
+}
+
 .nav-order-btn{
     background-color: #6f4e37;
     padding:6px 14px;
@@ -74,6 +80,20 @@ body{
     color: white;
     transition-duration: 500ms;
     box-shadow: 1px 1px 3px white;
+}
+
+.humberger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.humberger span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /* HERO */
@@ -107,6 +127,7 @@ body{
     font-family:'Playfair Display',serif;
     font-size:64px;
     letter-spacing:4px;
+    margin-bottom: 10px;
 }
 
 .hero-btn{
@@ -129,6 +150,7 @@ body{
 .btn-outline{
     border:1px solid #6f4e37;
     /* color:#ffffff; */
+
     color: black;
     box-shadow: 0 8px 20px rgba(111, 78, 55, 0.4);
 }
@@ -158,9 +180,16 @@ body{
     background:#ffffff; /* putih */
 }
 
-.about img{
+.about-img img{
     width:100%;
     border-radius:20px;
+}
+
+.details-about{
+    color:#5a4632;
+    font-size:18px;
+    line-height:1.8;
+    text-align: justify;
 }
 
 /* MENU */
@@ -347,6 +376,94 @@ footer{
 }
 
 /* RESPONSIF */
-/* @media screen && {
-    
-} */
+@media screen and (max-width : 768px){
+
+    .navbar{
+        padding:15px 25px;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #1c1c1c;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+    }
+
+    .nav-list li{
+        padding: 8px 0;
+    }
+
+    .nav-item-order{
+        margin-bottom: 10px;
+    }
+
+    .nav-list.active{
+        max-height: 300px;
+    }
+
+    .humberger{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .humberger span{
+        width: 25px;
+        height: 3px;
+        background: white;
+    }
+
+    /* BAG HERO */
+
+    .hero{
+        margin-top: 50px;
+    }
+
+    .hero h1{
+        font-size: 29px;
+    }
+
+    .hero h2{
+        font-size: 45px;
+    }
+
+    .hero-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+     /* ABOUT */
+
+     .about{
+        grid-template-columns: 1fr;
+    }
+
+     /* MENU */
+
+     .menu-section{
+        padding: 80px 20px;
+    }
+
+     .title{
+        font-size: 28px;
+    }
+
+     .card img{
+        height: 150px;
+    }
+
+     /* MENU LENGKAP */
+
+     .menu-section{
+        padding: 80px 20px;
+    }
+}
