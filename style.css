@@ -421,8 +421,6 @@ footer{
         background: white;
     }
 
-    /* BAG HERO */
-
     .hero{
         margin-top: 50px;
     }
@@ -441,13 +439,9 @@ footer{
         gap: 15px;
     }
 
-     /* ABOUT */
-
      .about{
         grid-template-columns: 1fr;
     }
-
-     /* MENU */
 
      .menu-section{
         padding: 80px 20px;
@@ -460,8 +454,6 @@ footer{
      .card img{
         height: 150px;
     }
-
-     /* MENU LENGKAP */
 
      .menu-section{
         padding: 80px 20px;
